@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.034);
+  transition: 0.5s;
+  height: 300px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.086);
+}
+
+.card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container{
+  padding: 0 0 0 0;
+}
+
+.grid{
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+ .level2{
+  font-size: small;
+  font-weight: 500;
+ }
+
+ .level3{
+  font-size: small;
+  font-weight: 300;
+ }
+
+ .nav{
+  position: sticky;
+  width: 100%;
+  height: 60px;
+  /* background-color: rgb(146, 50, 16); */
+  background-color: rgba(0, 0, 0, 0.886);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+ }
+
+ .emp-button{
+  padding-right: 10px;
+ }
+
+ .nav-logo{
+  max-height: 50px;
+  transition: 1.5s;
+ }
+
+ .nav-logo:hover{
+  transform: rotate(360deg);
+  /* transform-origin: 10px; */
+ }
+
+ .emp-add-button{
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: medium;
+  border-radius: 5px;
+  background-color: rgb(29, 96, 232);
+
+  transition: 0.5s;
+ }
+
+ .emp-add-button:hover{
+  background-color: rgb(6, 67, 188);
+ }
+
+ .emp-avatar{
+  background-color: rgba(0, 0, 0, 0.066);
+  border-radius: 10px;
+ }
