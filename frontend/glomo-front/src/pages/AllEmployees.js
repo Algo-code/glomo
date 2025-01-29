@@ -27,7 +27,16 @@ class AllEmployees extends React.Component {
       <div>
         {NavBar(false)},
         <div class="grid">
-          {this.state.employees.map((employee, id) => EmployeeCard(employee))}
+          {
+            this.state.employees.length > 0 ? (
+              this.state.employees.map((employee, id) => EmployeeCard(employee))
+            ) : (
+              <div class="center">
+                 <h2>You currently have no registered employees.</h2>
+              </div>
+             
+            )
+          }
         </div>
       </div>
     );
