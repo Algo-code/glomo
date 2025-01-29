@@ -1,14 +1,19 @@
 import React from 'react';
 import logo from '../logo.svg';
 
-function NavBar(){
+function NavBar(hide_button){
     return (
         <div class="nav">
-                <img class="nav-logo" src={logo} alt='logo'/>
-                {/* <p>Home</p> */}
-                <div class="emp-button">
+            <a href='/'>
+                <img class="nav-logo" src={logo} alt='logo' href='/'/>
+            </a>
+                
+            <div class="emp-button" hidden={hide_button}>
+                <a href='/employees/add'>
                     <button class="emp-add-button">Add Employee</button>
-                </div>
+                </a>
+                
+            </div>
         </div>
     );
 }

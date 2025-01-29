@@ -9,7 +9,7 @@ function EmployeeCard(props){
                 <img src={logo} alt="profile"/> 
             </div>
             <div class="container">
-                <h3>{props.name + ' ' + props.name}</h3>
+                <h3>{props.name + ' ' + props.last_name}</h3>
                 <p class="level2">{props.job_title}</p>
                 <p class="level3">{props.department}</p>
             </div>
