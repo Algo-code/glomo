@@ -48,7 +48,7 @@ const AllEmployees = () => {
   return (
     <div>
       {/* <NavBar  showNavLinks={false} /> */}
-      {NavBar("All Employees")}
+      {NavBar("")}
       <div class="searchbox">
         <input
           class="searchbar"
