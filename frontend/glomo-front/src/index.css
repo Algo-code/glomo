@@ -179,16 +179,54 @@ code {
 
  .home-text{
   display: flex;
-  flex-direction: column;
   align-items: center;
   padding: 20px;
  }
 
  .home-text-comp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 100px;
  }
 
  .add-emp-page{
   margin-bottom: 20px;
+ }
+
+ .searchbox{
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .searchbar{
+  width: 60%;
+  margin-top: 50px; 
+  font-family: 'Roboto'; 
+  border: none; 
+  border-radius: 2px; 
+  background-color: rgba(43, 124, 255, 0.084);
+ }
+
+ .grid-parent{
+  width: 100%;
+  margin-bottom: 20px;
+ }
+
+ .nav-page-heading{
+  font-family: 'Roboto';
+  color: white;
+  font-size: large;
+  font-weight: 700;
+  margin-left: 50px;
+ }
+
+ .logo-heading{
+  display: flex;
+  align-self: center;
+  align-items: center;
  }

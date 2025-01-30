@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import EmployeeCard from './EmployeeComponents';
 
 const SearchBar = () => {
     const [query, setQuery] = useState('');
@@ -30,13 +31,13 @@ const SearchBar = () => {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search products..."
+                placeholder="Search Employee..."
             />
             <ul>
-                {results.map((product) => (
-                    <li key={product.id}>
-                        {product.name} - {product.description}
-                    </li>
+                {results.map((employee) => (
+                    <div class="grid">
+                        {EmployeeCard(employee)}
+                    </div>
                 ))}
             </ul>
         </div>

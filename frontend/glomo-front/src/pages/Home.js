@@ -5,10 +5,11 @@ import HomeText from '../components/HomeText';
 function Home(){
     return (
         <div class="home">
-            {NavBar(false)}
-            <div class="home-text">
+            {NavBar("")}
+            {HomeText()}
+            {/* <div class="home-text">
                 {HomeText()}
-            </div>
+            </div> */}
             
         </div>
         

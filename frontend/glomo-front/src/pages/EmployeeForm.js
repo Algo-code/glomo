@@ -5,7 +5,7 @@ import EmployeeForm from '../components/EmployeeForm';
 function AddEmployee(){
     return(
         <div class="add-emp-page">
-            {NavBar(true)}
+            {NavBar("Add Employee")}
             {EmployeeForm()}
         </div>
         
