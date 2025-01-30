@@ -3,6 +3,7 @@ import axios from "axios";
 
 import NavBar from "../components/NavBar";
 import EmployeeCard from "../components/EmployeeComponents";
+import SearchBar from "../components/SearchBar";
 
 class AllEmployees extends React.Component {
   state = {
@@ -25,19 +26,21 @@ class AllEmployees extends React.Component {
   render() {
     return (
       <div>
-        {NavBar(false)},
-        <div class="grid">
-          {
-            this.state.employees.length > 0 ? (
-              this.state.employees.map((employee, id) => EmployeeCard(employee))
-            ) : (
-              <div class="center">
-                 <h2>You currently have no registered employees.</h2>
-              </div>
-             
-            )
-          }
-        </div>
+        {NavBar(false)}
+        <SearchBar/>
+        {this.state.employees.length > 0 ? (
+          <div>
+            
+            <div class="grid">
+              {this.state.employees.map((employee, id) => EmployeeCard(employee))}
+            </div>
+          </div>
+          
+        ) : (
+          <div class="center">
+            <h2>You currently have no registered employees.</h2>
+          </div>
+        )}
       </div>
     );
   }

@@ -45,6 +45,7 @@ code {
   gap: 10px;
   padding: 0px;
 }
+
  .level2{
   font-size: small;
   font-weight: 500;
@@ -137,6 +138,7 @@ code {
   align-self: center;
   align-items: center;
   flex-direction: column;
+  padding: 50px;
  }
 
  .form-button{

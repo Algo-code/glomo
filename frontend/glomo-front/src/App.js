@@ -5,7 +5,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import AllEmployees from "./pages/AllEmployees";
-import AddEmployee from "./pages/EmployeeForm";
+import EmployeeForm from "./pages/EmployeeForm";
 import Home from "./pages/Home";
 
 class App extends React.Component {
@@ -30,7 +30,7 @@ class App extends React.Component {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/employees" element={<AllEmployees/>} />
-          <Route path="/employees/add" element={<AddEmployee/>} />
+          <Route path="/employees/add" element={<EmployeeForm/>} />
         </Routes>
       </Router>
     );
